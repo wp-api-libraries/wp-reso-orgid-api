@@ -1,0 +1,14 @@
+{
+    "require": {
+        "stevegrunwell/wp-enforcer": "^0.4.1"
+    },
+    "require-dev": {
+	"codeclimate/php-test-reporter": "dev-master"
+    },
+    "post-install-cmd": [
+    	"wp-enforcer"
+	],
+	"post-update-cmd": [
+    	"wp-enforcer"
+	]
+}
