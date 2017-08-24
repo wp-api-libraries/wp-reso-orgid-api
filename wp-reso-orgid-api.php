@@ -107,7 +107,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_id( $ouid ) {
 
-			$request = $this->base_uri . '?ouid=' $ouid;
+			$request = $this->base_uri . '?ouid=' . $ouid;
 
 			$xml = simplexml_load_file( $request );
 
@@ -128,7 +128,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_mls_assocation( $mls_id ) {
 
-			$request = $this->base_uri . '/?assoc2mls=' $mls_id;
+			$request = $this->base_uri . '/?assoc2mls=' . $mls_id;
 
 			$xml = simplexml_load_file( $request );
 
@@ -149,7 +149,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_status( $active = '1' ) {
 
-			$request = $this->base_uri . '?active=' $active;
+			$request = $this->base_uri . '?active=' . $active;
 
 			$xml = simplexml_load_file( $request );
 
@@ -171,7 +171,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_city( $city ) {
 
-			$request = $this->base_uri . '?city=' $city;
+			$request = $this->base_uri . '?city=' . $city;
 
 			$xml = simplexml_load_file( $request );
 
@@ -191,7 +191,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_state( $state ) {
 
-			$request = $this->base_uri . '?state=' $state;
+			$request = $this->base_uri . '?state=' . $state;
 
 			$xml = simplexml_load_file( $request );
 
@@ -211,7 +211,7 @@ if ( ! class_exists( 'ResoOuidAPI' ) ) {
 		 */
 		function get_org_by_zip( $zip ) {
 
-			$request = $this->base_uri . '?zip=' $zip;
+			$request = $this->base_uri . '?zip=' . $zip;
 
 			$xml = simplexml_load_file( $request );
 
